@@ -31,8 +31,8 @@ A web application built with Django to manage a searchable index of medicines. T
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/fahadfoysal/employee_management.git
-    cd employee_management
+    git clone https://github.com/fahadfoysal/medicine_index.git
+    cd medicine_index
     ```
 
 2. **Create a virtual environment:**
