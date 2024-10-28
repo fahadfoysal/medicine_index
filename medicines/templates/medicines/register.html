@@ -1,0 +1,18 @@
+{% extends 'medicines/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Medicine Index | User Register{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto border p-5">
+                <h1 class="text-center main-color mb-3">Register</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }} 
+                    <button type="submit">Register</button>
+                </form>
+                <a href="{% url 'user_login' %}">Already have an account? Login here</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
